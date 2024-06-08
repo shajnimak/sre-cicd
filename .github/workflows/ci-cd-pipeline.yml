@@ -72,6 +72,9 @@ jobs:
       run: npm install
 
 
+    - name: Set Jest permissions
+      run: chmod +x ./node_modules/.bin/jest
+
     - name: Run tests
       run: npm test
 
